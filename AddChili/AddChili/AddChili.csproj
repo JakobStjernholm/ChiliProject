@@ -102,6 +102,12 @@
   <ItemGroup>
     <Resource Include="drafting_point_rightwards_arrow_u279B_icon_256x256.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AddChiliDataBase\AddChiliDataBase.csproj">
+      <Project>{08b9e674-d69b-4748-a6f0-6f4128644608}</Project>
+      <Name>AddChiliDataBase</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

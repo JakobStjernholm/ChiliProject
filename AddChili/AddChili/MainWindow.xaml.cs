@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AddChiliDataBase;
 
 namespace AddChili
 {
@@ -20,9 +21,11 @@ namespace AddChili
     /// </summary>
     public partial class MainWindow : Window
     {
+        DataBaseConnector dbo = new DataBaseConnector();
         public MainWindow()
         {
             InitializeComponent();
+            dbo.GetChili();
         }
 
         private void AddChiliButton1_Click(object sender, RoutedEventArgs e)
